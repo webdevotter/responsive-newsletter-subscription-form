@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Newsletter Signup for The Code Review">
     <title>The Code Review | Newsletter Subscription</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Quicksand:wght@400;700&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Quicksand:wght@400;700&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,17 +17,19 @@
         </div>
         <nav class="container">
             <ul class="nav-flex">
-                <h1>Signup for our newsletter</h1>
+                <h2><strong>Signup for our newsletter</strong></h2>
                 <p>Get the latest news on how your code is doing right in your inbox</p>
             </ul>
         </nav>
     </header>
-    <main class="container">
-                
+
+    
+    <main class="container">        
+               
             <form>
                 <fieldset>
                     
-                    <h2>Contact Information</h2>
+                    <h2><strong>Contact Information</strong></h2>
 
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="full-name" placeholder="Required">
@@ -45,14 +47,14 @@
                     <input type="text" id="address2" name="user-address2">
 
                     <label for="state">State</label>
-                    <input type="text" id="state" name="user-state">
+                    <input type="text" id="state" name="user-state" placeholder="Choose State">
 
                     <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="user-zip">
 
-                    <hr>
-                    
-                    <h2>Newsletter</h2>
+                
+                                
+                    <h2 id="newsletter"><strong>Newsletter</strong></h2>
 
                     <p class="hint">Select the newsletters you would like to receive</p>
 
@@ -64,7 +66,8 @@
 
                     <input type="checkbox" id="javascript_news" name="javascript">
                     <label for="javascript_news">Javascript News</label>
-                                       
+
+                                                        
                     <p class="hint">Newsletter format</p>
 
                     <input type="radio" id="format_choice_1" name="format" value="html">
@@ -82,7 +85,7 @@
                     <button type="submit">Sign Up</button>
                     
 
-                    <p class="hint"><em>Copyright The Code Review</em></p>
+                    <p class="hint" id="copyright"><em>Copyright The Code Review</em></p>
 
                     
 
