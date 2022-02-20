@@ -1,52 +1,90 @@
 * {
     box-sizing: border-box;
+   
 }
 body {
     font-family: 'Merriweather', serif;
+    margin: 0px;  
 }
-.container {
+header,
+main {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+nav .container, .container {
     max-width: 860px;
     margin: 0 auto;
-    padding: 1rem;
-}
-ul {
-    padding: 0;
 }
 h2 {
     font-size: .95em; 
+    color: #3B4650
 }
+.fieldset-two .flex-pair-2 {
+    display: flex;
+}
+.fieldset-two input {
+    flex-basis: 10%;
+}
+.fieldset-two label {
+    margin-top: 4px;
+}
+.fieldset-two input:focus {
+    outline: none;
+}
+:required {
+    text-align: right;
+    min-height: 39px;
+    justify-content: center;
+    font-style: italic;
+}
+ ::placeholder {
+    font-size: .65em;
+    min-height: 39px;
+    justify-content: center;
+}
+
 p {
     font-size: .75em;
 }
-label {
-    color: 55687A;
+
+.hint {
+    font-size: .85em;
 }
-input[type="radio"]:checked {
-    background-color: #489FF9;
-  }
 input:focus, textarea:focus {
     outline: 2px solid #46698B;
+    transition: .50s ease-in-out;
 }
+
 nav.container p {
     font-size: .80em;
 }
+div.nav-flex {
+    border-bottom: 2px solid #3b4650;
+}
+div.nav-flex p {
+    border-bottom: 4px solid #3b4650;
+    margin-bottom: 4px;
+    padding-bottom: 25px;
+}
+
 fieldset {
     border: none;
 }
-nav.container {
-    border-bottom: 4px solid #2D3945;
+fieldset.fieldset-one {
+    border-bottom: 2px solid #3b4650;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 25px;
 }
-main.container {
-    border-top: 2px solid #2D3945;
-    margin-top: 4px;
+fieldset.fieldset-two,
+legend #newsletter {
+    margin-top: 25px;
+    padding: 0px;
 }
-#zip {
-    margin-bottom: 20px;
-}
-#newsletter {
-    border-top: 2px solid #2D3945;
-    padding-top: 20px;
-    margin-top: 0px;
+
+legend {
+    font-weight: bold;
+    padding: 0px;
 }
 header, #copyright {
     text-align: center;
@@ -54,29 +92,32 @@ header, #copyright {
 #logo-text {
     text-transform: uppercase;
     color: white;
-}
-#logo .container {
     background-color: #2D3945;
-    max-width: 100%;
- }
-.required {
-    font-size: .65em;
-    text-align: right;
+    padding: 24px;
+    text-align: center;
+    display: block;
+    
 }
+/* span {
+    display: block;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+} */
+
 #copyright {
     font-size: .75em;
     color: #B1B5B9
 }
-h2 {
-    color: #3B4650
-}
+
 label {
     font-size: .85em;
+    color: rgb(73, 93, 112);
 }
 #zip {
     max-width: 50%;
 }
-input, textarea {
+input, textarea, select {
     background-color: #EFF0F1;
     border: none;
     border-radius: 5px;
@@ -88,10 +129,11 @@ input, textarea {
     color: black;
     font-family: 'Merriweather', serif;
 }
+
 textarea {
     height: 100px;
     max-width: 100%;
-}
+   }
 button {
     width: 100%;
     padding: 12px 0;
@@ -103,4 +145,27 @@ button {
     margin: 24px auto;
     display: block;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    #zip {
+        max-width: 25%;
+    }
+    .fieldset-one .flex-pair-1 {
+        display: flex;
+        flex-flow: column;
+     }
+     .fieldset-one .flex-pair-1 {
+         flex-direction: row;
+     }
+     .fieldset-one input,
+     .fieldset-one select {
+         flex-grow: 1;
+         flex-basis: 75%;
+     }
+     .fieldset-one label {
+        flex-basis: 25%;
+        margin: auto 0;
+     }
+        
 }
