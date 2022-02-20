@@ -36,11 +36,19 @@ h2 {
     min-height: 39px;
     justify-content: center;
     font-style: italic;
+    
 }
  ::placeholder {
     font-size: .65em;
     min-height: 39px;
     justify-content: center;
+}
+#state {
+    font-size: .75em;
+    min-height: 39px;
+    justify-content: center;
+    padding: 3px;
+    color: #373838;
 }
 
 p {
@@ -50,7 +58,7 @@ p {
 .hint {
     font-size: .85em;
 }
-input:focus, textarea:focus {
+input:focus, textarea:focus, #state:focus {
     outline: 2px solid #46698B;
     transition: .50s ease-in-out;
 }
@@ -75,6 +83,7 @@ fieldset.fieldset-one {
     padding-left: 0px;
     padding-right: 0px;
     margin-top: 25px;
+    
 }
 fieldset.fieldset-two,
 legend #newsletter {
