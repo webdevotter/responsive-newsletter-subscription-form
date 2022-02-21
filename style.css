@@ -50,31 +50,35 @@ h2 {
     padding: 3px;
     color: #373838;
 }
-
 p {
     font-size: .75em;
 }
-
+#main-one-background {
+    padding-top: 25px;
+    background: rgba(70, 100, 50, .2);
+}
 .hint {
     font-size: .85em;
 }
 input:focus, textarea:focus, #state:focus {
     outline: 2px solid #46698B;
+}
+input:focus, textarea:focus, #state:focus {
+    box-shadow:  5px 5px 8px rgb(94, 94, 94);
     transition: .50s ease-in-out;
 }
-
 nav.container p {
     font-size: .80em;
 }
 div.nav-flex {
     border-bottom: 2px solid #3b4650;
+    margin-top: 25px;
 }
 div.nav-flex p {
     border-bottom: 4px solid #3b4650;
     margin-bottom: 4px;
     padding-bottom: 25px;
 }
-
 fieldset {
     border: none;
 }
@@ -82,15 +86,13 @@ fieldset.fieldset-one {
     border-bottom: 2px solid #3b4650;
     padding-left: 0px;
     padding-right: 0px;
-    margin-top: 25px;
-    
+    padding-top: 15px;
 }
 fieldset.fieldset-two,
 legend #newsletter {
     margin-top: 25px;
     padding: 0px;
 }
-
 legend {
     font-weight: bold;
     padding: 0px;
@@ -105,20 +107,11 @@ header, #copyright {
     padding: 24px;
     text-align: center;
     display: block;
-    
 }
-/* span {
-    display: block;
-    margin-top: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
-} */
-
 #copyright {
     font-size: .75em;
     color: #B1B5B9
 }
-
 label {
     font-size: .85em;
     color: rgb(73, 93, 112);
@@ -138,11 +131,10 @@ input, textarea, select {
     color: black;
     font-family: 'Merriweather', serif;
 }
-
 textarea {
     height: 100px;
     max-width: 100%;
-   }
+}
 button {
     width: 100%;
     padding: 12px 0;
@@ -155,7 +147,6 @@ button {
     display: block;
     cursor: pointer;
 }
-
 @media screen and (min-width: 768px) {
     #zip {
         max-width: 25%;
@@ -176,5 +167,4 @@ button {
         flex-basis: 25%;
         margin: auto 0;
      }
-        
 }
